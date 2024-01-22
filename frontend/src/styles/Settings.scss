@@ -1,0 +1,217 @@
+@import "./globals.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  .rootbody{
+    margin-left: -45px;
+    height: 1107px;
+  
+  }
+  .content{
+    height: 1001px;
+    border-radius: 4px;
+    // border: 1px solid red;
+    margin: 30px 60px 30px 30px;
+
+  }
+
+  .account{
+    margin-left: 45px;
+    margin-top: 45px;
+  }
+
+  .accset{
+    font-family: $poppins;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .accdetail{
+    font-family: $poppins;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .profile{
+    display: flex;
+    gap: 30px;
+    margin-left: 45px;
+    margin-top: 75px;
+  }
+
+  .top{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(17, 15, 15);
+    overflow: hidden;
+}
+
+.imagef{
+    height: 100%;
+    width: 100%;
+  }
+  input[type="file"]{
+    display: none;
+  }
+  .uploadimg{
+    margin-top: 10px;
+    width: 216px;
+    height: 73px;
+    border-radius: 4px;
+    
+    background-color: #00904A;
+   position: relative;
+
+  }
+  .uploadimg .labeling{
+
+    font-family: $poppins;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  .pname, .pemail{
+    width: 1049px;
+    height: 80px;
+    box-shadow: 1px 8px 4px 1px rgba(0, 0, 0, 0.2);
+    background-color: #D9D9D980;
+    margin-left: 30px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .hpname{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    float: left;
+    margin: 20px 20px auto 28px;
+  }
+  .hpdetail{
+    font-family: $poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+    float: left;
+
+  }
+  .accountbottom{
+    width: 1043px;
+    height: 300px;
+    background-color: #D9D9D980;
+    margin-left: 30px;
+    margin-right: 20px;
+    box-shadow: 1px 8px 4px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  .aheader{
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+  }
+
+  .Editp{
+    margin: 0 60px 18px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .editpt{
+    font-family: Rubik;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    overflow: hidden;
+  }
+  .editpl{
+    width: 25.16px;
+    height: 26px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color:green;
+  }
+
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+  
+

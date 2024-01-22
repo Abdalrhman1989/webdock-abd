@@ -1,0 +1,110 @@
+@import "./globals.scss";
+
+a {
+    text-decoration: none;
+}
+
+.CardBox {
+    font-family: $raleway;
+    color: $grey;
+    border-bottom: 0.1vw solid $grey3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .heartInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center; // Align heartInfo with the avatar
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+
+    .LikeFunc, .CommentNum {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        align-self: baseline; // Aligns with the baseline of the container
+
+        svg {
+            color: $green1;
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        p {
+            color: $green1;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    }
+
+    .InfoPart {
+        font-family: $poppins;
+        display: flex;
+        flex-direction: row;
+        align-items: center; // Aligns the InfoPart content with the avatar
+        text-align: left;
+        text-decoration: none;
+        
+
+        .UserProfile {
+            margin-left: auto;
+            margin-top: 20px;
+            display: flex;
+            align-items: center; // Aligns the profile image and user name on the same line
+    
+            img {
+                height: 30px;
+                width: 30px;
+                margin-right: 10px; // Space between image and username
+                padding: 5px;
+                border-radius: 50%; // Ensures the image is a circle
+                border: none;
+
+            }
+    
+            .userName {
+                color: black;
+                font-weight: bold;
+                font-size: 0.9rem;
+                
+            }
+        }
+
+        h3 {
+            color: black;
+            font-weight: bold;
+        }
+
+        p.desc, p.userName, i.date {
+            margin-top: 5px; // Adjust spacing as needed
+            color: black;
+            font-weight: normal;
+        }
+
+       
+
+        i.date {
+            color: $grey;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.loggedOutText {
+    font-family: $poppins;
+    color: white;
+    background-color: $grey3;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+

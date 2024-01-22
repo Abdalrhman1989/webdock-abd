@@ -1,0 +1,135 @@
+@import "./globals.scss";
+
+.roadmap {
+    display: flex;
+    background-color: $white;
+    width: auto;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 10px 10px 10px;
+    
+    .roadmapColumn {
+        flex: 1;
+        justify-content: space-around;
+        max-width: 33%;
+        border-radius: 10px;
+
+        .roadmapColumnPlanned {
+            @include RoadmapColumn;
+            display: flex;
+            
+            .dot { 
+                background-color: $blue;
+                height: 1vw;
+                width: 1vw;
+                border: 0.2vw solid $blue;
+                border-radius: 100%;
+                margin: 1vw;
+            }
+        }
+
+        .roadmapColumnProgress{
+            @include RoadmapColumn;
+            display: flex;
+            
+            .dot { 
+                justify-content: center;
+                background-color: $green1;
+                width: 1vw;
+                height: 1vw;
+                border: 0.2vw solid $green1;
+                border-radius: 100%;
+                margin: 1vw;
+            }
+        }
+        
+        .roadmapColumnCompleted {
+            @include RoadmapColumn;
+            display: flex;
+            
+            .dot { 
+                background-color: $purple;
+                height: 1vw;
+                width: 1vw;
+                border: 0.2vw solid $purple;
+                border-radius: 100%;
+                margin: 1vw;
+            }
+        }
+    }
+
+    .roadmapContent {
+        .PostCard {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: $lightGrey;
+            border-radius: 10px;
+    
+            h3 {
+                font-size: 1.2em;
+                margin-bottom: 5px;
+            }
+    
+            .desc {
+                font-size: 1em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 250px;
+            }
+    
+            .date {
+                font-size: 0.8em;
+                margin-top: 5px;
+            }
+    
+            .LikeFunc, .CommentNum {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8em;
+                margin-top: 10px;
+            }
+    
+            // Ensure the user profile picture is hidden
+            .UserProfile, .heartInfo {
+                display: none;
+            }
+        }
+    }
+}
+.roadmapColumnPlannedDot { 
+    background-color: $blue;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.roadmapColumnInProgressDot { 
+    background-color: $green1;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.roadmapColumnCompletedDot { 
+    background-color: $purple;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.roadmapContent {
+        
+    border: 0.2vw solid $lightGrey;
+    cursor: pointer;
+    overflow: auto;
+    height: 350px;
+    white-space: nowrap;
+    
+}

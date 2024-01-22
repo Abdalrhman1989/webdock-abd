@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "webdockadmin",
+    "password": "WebDock@32123",
+    "database": "abd",
+    "host": "abd.vps.webdock.cloud",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "webdockadmin",
+    "password": "WebDock@32123",
+    "database": "abd",
+    "host": "abd.vps.webdock.cloud",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "webdockadmin",
+    "password": "WebDock@32123",
+    "database": "abd",
+    "host": "abd.vps.webdock.cloud",
+    "dialect": "mysql"
+  }
+}

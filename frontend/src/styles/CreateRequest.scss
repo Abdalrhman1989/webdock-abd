@@ -1,0 +1,28 @@
+@import "./globals.scss";
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: $poppins;
+    border-radius: 0px 10px 10px 10px;
+
+    input#image {
+        display: block;
+    }
+
+    input, select, textarea{
+        border: 1px solid $grey3;
+    border-radius: 10px; // Adjust this value as per your requirement
+    padding: 10px;
+    }
+
+    #button {
+        width:fit-content;
+        color: $white;
+        @include button;
+        
+    }
+    :hover {
+        color: $green1;
+    }
+}

@@ -1,0 +1,133 @@
+@import "./globals.scss";
+
+
+.commentCard {
+    .box{
+        width: 100%;
+    }
+    font-family: $poppins;
+    border-bottom: 1px solid $grey3;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: space-between;
+    .userInfo {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        img {
+            padding: 0.5vw;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+        }
+
+        
+        .user {
+            color: black;
+                font-weight: bold;
+                font-size: 0.9rem;
+            h5 {
+                color: $green1;
+            }
+        }
+        
+        
+
+
+    }
+
+    .comment {
+        color: black;
+        font-size: 0.9rem; 
+        margin-bottom: 10px; 
+    }
+    
+
+
+    
+
+    .commentActions {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Vertically align items in the center */
+        margin-left: auto;
+        gap: 10px; /* Add spacing between items */
+            p{
+                svg{
+                    margin-left: auto;
+                    margin-right:auto;
+                }
+                
+                display: flex;
+                flex-direction: column;
+                margin: 0px 5px 0px 5px;
+                color: black;
+            }
+        
+    }
+
+    .heart-button {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+      
+        
+        svg {
+          color: black; 
+          // Add hover effect
+          &:hover {
+            color: darken(black, 10%); 
+          }
+        }
+      
+        .filledHeart {
+          color: green; 
+
+      
+         
+          &:hover {
+            color: darken(green, 10%); // Darken the filled heart icon on hover
+          }
+        }
+      
+        p {
+          color: green; // Set likes count text to black
+
+        }
+      }
+
+    
+}
+
+.commentRepliesSection {
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+
+    
+
+    p.reply {
+      padding: 5px;
+      margin-bottom: 5px;
+      background-color: whitesmoke; // Slightly different background for individual replies
+      
+      
+      border-radius: 4px;
+
+      span {
+        font-weight: bold;
+        color:black; // Color for the username of the replier
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      
+    }
+  }

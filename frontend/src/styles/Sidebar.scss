@@ -1,0 +1,18 @@
+@import "./globals.scss";
+
+// Side navbar 
+
+.container{
+  position: fixed;
+  height: 100vh;
+  width:15vh;
+  background: url("../assets/SideBarBackgrounImage.png");
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $white;
+  .element {
+    color: $white;
+    
+  }
+}
